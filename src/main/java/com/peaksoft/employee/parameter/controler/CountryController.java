@@ -68,7 +68,7 @@ public class CountryController {
         if (result.hasErrors()){
             return"parameter/country/editCountry";
         }
-        Country count = countryService.findCountryById(id);
+        Country count = countryService.findCountryById(id);//
         count.setCountryName(country.getCountryName());
         count.setDescription(country.getDescription());
         count.setCapital(country.getCapital());
